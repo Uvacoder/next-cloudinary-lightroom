@@ -3,7 +3,6 @@ import useSWR from "swr";
 import styles from "../styles/Home.module.css";
 import {
   Image,
-  Transformation,
   CloudinaryContext,
   Placeholder,
 } from "cloudinary-react";
@@ -47,8 +46,8 @@ export default function Home() {
                 alt={pic.public_id}
               >
                 {/* <Transformation effect="lightroom:saturation_-100" /> */}
-                <Transformation effect="lightroom:xmp:sepia_deep.xmp" />
-                <Transformation height="600" />
+                {/* <Transformation effect="lightroom:xmp:sepia_deep.xmp" /> */}
+                {/* <Transformation height="600" /> */}
                 <Placeholder type="blur" />
               </Image>
             ))}
